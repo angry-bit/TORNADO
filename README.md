@@ -1,2 +1,2 @@
 # TORNADO
-cloud-based distributed data curation framework for large-scale online and offline video analytics
+Intermediate Results Orchestration based Service-Oriented Data Curation Framework for Intelligent Video Big data Analytics in the Cloud
