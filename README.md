@@ -1,4 +1,4 @@
-# TORNADO : Intermediate Results Orchestration based Data Curation Framework for Intelligent Video Big data Analytics in the Cloud
+# **TORNADO** : Intermediate Results Orchestration based Data Curation Framework for Intelligent Video Big data Analytics in the Cloud
 
 Big data technologies are software platforms designed for distributed computing to process, analyze, and extract the valuable insights from large datasets in a scalable and reliable way. **Cloud computing** is a model for enabling ubiquitous, convenient, and on-demand network access to a shared pool of configurable computing resources that can be rapidly provisioned and released with minimal management effort or service provider interaction. The cloud is preferably appropriate to offer the big data computation power required for the processing of these large datasets. For big data analytics, numerous cloud platforms have been developed, including IBM Big Data Analytics, Amazon web service, and many more. 
 
@@ -16,3 +16,38 @@ The main features of the **TORNADO** are:
 - TORNADO provides **video analytics algorithms and service creation and publishing APIs** that enable developers and researchers to author and publish contextual and domain-specific video analytics algorithms and services. Which are made available to the developers while following as-a-service model 
     
 - TORNADO provide a unified scale-out middleware called IR Middleware against to address issues like big dimensionality, intermediate results, and video analytics pipeline orchestration. 
+
+
+## Configuration 
+
+### Environment setting
+Download and configure [Hortonworks Data Platform](https://www.cloudera.com/products/hdp.html) (HDP).  Configure the following frameworks while deploying HDF.
+ 1. [HDFS](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html)
+ 2. [Apache Hbase](https://hbase.apache.org/) and [Apache Phoenix](http://phoenix.apache.org/)
+ 3. [Apache Spark](https://spark.apache.org/)
+ 4. [Apache Kafka](https://kafka.apache.org/)
+ 5. [Apache Zookeeper](https://zookeeper.apache.org/)
+
+Download and configure the TORNADO Framework using [Eclipse](https://www.eclipse.org/)
+> ```
+> git clone https://github.com/angry-bit/TORNADO.git
+
+### Real-time Video Stream Acquisition & Synchronization variable settings 
+Set the following variable in the **GlobalClusterConfigurations** interface as per the HDP deployment. 
+
+> siat.dsl.data.acquisition.streaming.operations.client.configuration
+>```
+> public static String KAFKA_SERVER_HOST_NAMES = "node1,node2,node3";
+> public static String ZOOKEEPER_SERVER_HOST_NAMES = "node1,node2,node3";
+> public static final int ZOOKEEPER_SESSION_TIME_OUT_MS = 8000;
+> public static final int ZOOKEEPER_CONNECTION_TIME_OUT_MS = 5000;
+> public static final long TWO_SECONDS = 2000;
+
+Modify the following **Real-time Video Stream Acquisition & Synchronization** Interfaces if required.
+> IKafkaConsumerConstants
+> IKafkaProducerConstants
+
+### Immediate Structured Big data store model deployment 
+ISBDS is provided to manage large-scale structured data in the distributed environment using Apache Phoenix. Use the following API to deploy the ISBDS schema. 
+>```
+> ModelHandler.deploySiatSchema();
