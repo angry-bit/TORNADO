@@ -50,3 +50,5 @@ Modify the following **Real-time Video Stream Acquisition & Synchronization** In
 ISBDS is provided to manage large-scale structured data in the distributed environment using Apache Phoenix. Use the following API to deploy the ISBDS schema. 
 >```
 > ModelHandler.deploySiatSchema();
+
+<img scr="figures/UseCaseDiagram.png">
