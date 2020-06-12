@@ -44,8 +44,7 @@ Set the following variable in the **GlobalClusterConfigurations** interface as p
 > public static final long TWO_SECONDS = 2000;
 
 Modify the following **Real-time Video Stream Acquisition & Synchronization** Interfaces if required.
-> IKafkaConsumerConstants
-> IKafkaProducerConstants
+> IKafkaConsumerConstants, and IKafkaProducerConstants
 
 ### Immediate Structured Big data store model deployment 
 ISBDS is provided to manage large-scale structured data in the distributed environment using Apache Phoenix. Use the following API to deploy the ISBDS schema. 
