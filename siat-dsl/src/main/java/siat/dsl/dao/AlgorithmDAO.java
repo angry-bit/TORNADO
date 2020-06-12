@@ -26,7 +26,7 @@ import siat.dsl.phoenix.Crud;
  * 
  * @author Aftab Alam <aftab@khu.ac.kr>
  * 
- * @version 1.0
+ * @version 1.00
  * @since 2018-29-07
  **/
 public class AlgorithmDAO {
