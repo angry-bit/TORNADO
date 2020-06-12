@@ -51,4 +51,4 @@ ISBDS is provided to manage large-scale structured data in the distributed envir
 >```
 > ModelHandler.deploySiatSchema();
 
-<img scr="figures/UseCaseDiagram.png">
+<img src="figures/UseCaseDiagram.png"  width="400" height="400">
