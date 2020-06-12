@@ -16,5 +16,3 @@ The main features of the **TORNADO** are:
 - TORNADO provides **video analytics algorithms and service creation and publishing APIs** that enable developers and researchers to author and publish contextual and domain-specific video analytics algorithms and services. Which are made available to the developers while following as-a-service model 
     
 - TORNADO provide a unified scale-out middleware called IR Middleware against to address issues like big dimensionality, intermediate results, and video analytics pipeline orchestration. 
-
-- We implement the proposed framework and conduct extensive experiments to validate our claims.
