@@ -20,7 +20,7 @@ The main features of the **TORNADO** are:
 ## TORNADO - Archtecture
 As illustrated in the following figure, TORNADO is composed of six components i.e., RVSAS, ISBDS, DPBDS, ISBRM, TORNADO Business Logic, and TORNADO Web Services.
 
-<img src="figures/Architecture.jpg"  width="400" height="400">
+<img src="figures/Architecture.jpg"  width="600" height="600">
 
 ### Real-time Video Stream Acquisition and Synchronization (RVSAS)
 This component provides interfaces and acquire large-scale video streams from device-independent video stream sources for on-the-fly processing. The video stream sources are synchronized based upon the user identification and the timestamp of the video stream generation. Then, it is queued in the form of mini-batches in distributed stream buffer for near real-time video analytics. The video stream queued in the form of mini-batch can be accessed while using VSAS. During video analytics service pipelining, the **Intermediate Results** are maintained through **Intermediate Results Manager**. Similarly, **Real-time Stream Acquisition Service** is equipped with **LVSM** to provide a push-based notification response to the client with the help of a publish-subscribe mechanism. The extracted values (features and anomalies) and the actual video streams are then persisted into **ISBDS** and **DPBDS**, respectively.
@@ -42,7 +42,7 @@ ISBRM component is responsible for validating and mapping the contextual data to
  - The sequence diagram for session creation, video stream data source, and batch data management are shown in the following figure along with video analytics algorithm and service creation.
  - In the Actor lifeline **A** and **D** represent **Admin** and **Developer**, respectively. These two roles are allowed to create a new video analytics algorithm and service.
 
- <img src="figures/SequenceDiagrams.jpg"  width="400" height="400">
+ <img src="figures/SequenceDiagrams.jpg"  width="600" height="600">
  
 
 ## Configuration 
